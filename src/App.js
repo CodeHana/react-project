@@ -1,0 +1,32 @@
+import GameCard from "./GameCard";
+const gamesList = [
+  {
+    id: 0,
+    name: "Scythe",
+    rating: null, 
+    category: "Fun"
+  },
+  {
+    id: 1,
+    name: "Machi Koro",
+    rating: null, 
+    category: "Deck Building"
+  },
+  {
+    id: 2,
+    name: "Galacy Trucker",
+    rating: null, 
+    category: "Fun"
+  }
+]
+
+function App() {
+  return (
+    <div>
+      <h1>My Board Games</h1>
+      {gamesList.map( g => ( <GameCard game={g}/> ))}
+    </div>
+  );
+}
+
+export default App;
